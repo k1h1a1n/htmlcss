@@ -1,0 +1,195 @@
+<!DOCTYPE html.>
+
+<html>
+
+<head>
+
+<title>My Activites</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="MainCustomer">
+	
+	<div class="container-fluid">
+	
+		<div class="ActivitiesData">
+			<div class="NamePolicy">
+				<div class="ClientName">Sunil Mehta</div>
+				<div class="policyNo ExtraText">Policy No. 734379349
+				<span>ICICI Lombard</span>
+				</div>
+			</div>
+			
+			<div class="DetailsArea">
+				<div class="IcoNArea">
+					<img src="Images/General_Insurance.png">
+					<span>Hemant</span>
+				</div>
+				<div class="DataArea">
+					<div class="PolicyProd">Motor Claim</div>
+					<div class="ProdInfo">MH02 BY 7066</div>
+					
+					<div class="TaskSt">
+						<div class="TaskStIn">
+						<p>Task Status</p>
+						<span>Claim Intimated</span>
+						</div>
+					</div>
+					
+				</div>
+				<div class="StatusArea TopMarg">
+					<div class="almostClosed WidthAuto">Almost closed</div>
+					<div class="OverDuNot"><i>3 days over</i></div>
+				</div>
+			</div>
+		  </div>
+		  
+		  <div class="ActivitiesData">
+		  
+		  <div class="NamePolicy">
+				<div class="ClientName">What am I expected to do</div>
+				<div class="policyNo">23/11/21 <span class="timeShow">2:30 pm</span>
+				</div>
+			</div>
+			
+			 <div class="NamePolicy">
+				<div class="ClientName FillWid">Fill up claim form, collect RC Book, arrange car pick up</div>
+				<img src="Images/Meeting_two.png" style="width:40px;">
+				</div>
+				
+				<div class="CallUpText"><i>Call up the customer, go to his house and collect the RC Book copy and get the claim form signed</i>
+				</div>
+			</div>
+			
+				<div class="NamePolicy">
+				<div class="ClientName">Have you completed any activity</div>
+
+				<div class="ToggleCheckNew">
+					<input type="checkbox" id="CircleCheckSH" name="">
+				</div>
+			
+				</div>
+
+				<div class="ActivitiesData ShowNone">
+
+				<div class="WhatDidM">
+					<div class="WhatDidH">What did you do</div>
+					<div class="WhatDidC">
+						<table>
+						  <tr>
+							<td>
+								<input type="checkbox" id="Insurance1" name="Insurance1" >
+								<label for="Insurance1">Intimate the claim</label>
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+								<input type="checkbox" id="Insurance2" name="Insurance2">
+								<label for="Insurance2">Arrange the surveyor</label>
+							</td>
+						  </tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="Insurance3" name="Insurance3">
+								<label for="Insurance3">Collect required documents</label>
+							</td>
+						  </tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="Insurance4" name="Insurance4">
+								<label for="Insurance4">Submit documents to insurer</label>
+							</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+
+			<div class="SelectOptionMain">
+		
+				<div class="SelectOne">
+
+				<p>Date of Activity</p>
+				 
+				 <input type="date">
+					
+				</div>
+				
+				<div class="SelectTwo">
+
+				 <p class="AligMarg">Mode of Activity</p>
+				 
+					<select name="cars" id="cars">
+					  <option value="one">Call</option>
+					  <option value="two">Visit</option>
+					</select>
+					
+					
+				</div>
+			
+			</div>
+
+			<div class="SelectOptionMain">
+		
+				
+				<div class="SelectTwo WidthAutoFW">
+
+				 <p class="AligMarg">Status of Task after this activity</p>
+				 
+					<select name="cars" id="cars">
+					  <option value="one">Awaiting response from surveyor</option>
+					  <option value="two">Visit</option>
+					</select>
+					
+					
+				</div>
+			
+			</div>
+
+				<div class="TextAreaM">
+					<p>Notes about this activity</p>
+					<input type="text" placeholder="some notes can be entered here by the user">
+				</div>
+
+
+
+					<div class="GenRateSubClas SpacingTB">
+						<input type="button" value="Save">
+					</div>
+
+				</div>		
+			
+		  </div>
+
+	
+
+	
+	</div>
+
+	</div>
+	
+	
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/Style.js.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#CircleCheckSH").click(function(){
+    $(".ShowNone").toggle();
+  });
+});
+</script>
+
+
+</body>
+
+</html>

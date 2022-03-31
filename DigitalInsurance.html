@@ -1,0 +1,110 @@
+<!DOCTYPE html.>
+
+<html>
+
+<head>
+
+<title>Indicator</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="MainCustomer">
+	
+	<div class="container-fluid">
+	
+	<div class="Bluekey">
+		Digital Insurance Handbook
+	</div>
+	
+	<div class="HandbookPara">
+		<p>This will create a navigable e-book of L.I.C. policies of <b>Deepak Kumar Gupta.</b> which you can share with your customer via WhatsApp or e-mail.</p> 
+		<p>Kindly note that the navigation will work only if the pdf is opened with Adobe Acrobat Reader</p>
+	</div>
+	
+	<!--
+	<div class="DashedbOX">
+		<input type="file" id="myfile" name="myfile">
+	</div>
+	-->
+	
+	<div class="DashedbOX">
+		<span class="file-msg">Tap to add picture of your client</span>
+	  <input class="file-input" type="file" multiple="">
+	</div>
+	
+	<div class="BrandHeading">Your Branding</div>
+	
+	<div class="pictureDashed">
+	<span class="file-msg">Tap to add your picture</span>
+	  <input class="file-input" type="file" multiple="">
+	</div>
+	
+	<div class="AddressArea">
+	<h4>Fortune Insurance Advisors Pvt. Ltd</h4>
+	<p>Life & General Insurance Consultants</p>
+	<p>Mob. +91-98277726261 <span style="margin-left:10px;">e-mail: fortunelifeadv@gmail.com</span></p>
+	<p>www.fortunelifeadv.com</p>
+	</div>
+	
+	<div class="SubClas">
+		<input type="button" value="Edit Profile" style="margin-top: 5px;">
+	</div>
+	
+
+	
+	<div class="GenRateSubClas">
+		<input type="button" value="Submit">
+	</div>
+	
+	
+	</div>
+
+	</div>
+	
+<!-- owl js -->
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<script>
+var $fileInput = $('.file-input');
+var $droparea = $('.file-drop-area');
+
+// highlight drag area
+$fileInput.on('dragenter focus click', function() {
+  $droparea.addClass('is-active');
+});
+
+// back to normal state
+$fileInput.on('dragleave blur drop', function() {
+  $droparea.removeClass('is-active');
+});
+
+// change inner text
+$fileInput.on('change', function() {
+  var filesCount = $(this)[0].files.length;
+  var $textContainer = $(this).prev();
+
+  if (filesCount === 1) {
+    // if single file is selected, show file name
+    var fileName = $(this).val().split('\\').pop();
+    $textContainer.text(fileName);
+  } else {
+    // otherwise show number of files
+    $textContainer.text(filesCount + ' files selected');
+  }
+});
+</script>
+
+</body>
+
+</html>
